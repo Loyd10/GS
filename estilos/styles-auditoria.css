@@ -485,7 +485,7 @@
       color: var(--ink-soft);
     }
     .check-list li::before {
-      content: "âœ“";
+      content: "✓";
       display: grid;
       place-items: center;
       flex: 0 0 24px;
