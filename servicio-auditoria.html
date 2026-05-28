@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -18,30 +18,19 @@
         <span class="brand-text"><strong>González Solís</strong><span>Servicio de Auditoría</span></span>
       </a>
 
-
-      <nav class="nav" aria-label="Navegación principal">
+      <nav class="nav-links" aria-label="Navegación principal">
         <a href="#metodologia">Metodología</a>
         <a href="#servicios" class="active">Servicios de Auditoría</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="btn btn-primary header-cta" href="#contacto">Solicita una propuesta</a>
-
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir navegación" aria-expanded="false">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <a class="button button-primary" href="#contacto">Solicita una propuesta</a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+      </div>
     </div>
   </header>
-
-  <div class="mobile-panel container" id="mobilePanel">
-    <a href="#metodologia">Metodología</a>
-    <a href="#servicios">Servicios de Auditoría</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#contacto">Contacto</a>
-  </div>
 
   <main>
     <section class="hero">
@@ -335,50 +324,47 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a href="/" class="brand" aria-label="GS González Solís">
-          <span class="brand-mark">GS</span>
-          <span class="brand-divider" aria-hidden="true"></span>
-          <span class="brand-name">González Solís</span>
+        <a href="index.html" class="brand footer-brand" aria-label="GS González Solís">
+          <span class="brand-logo-box">
+            <img src="https://gs.com.mx/wp-content/uploads/2026/03/logo_GS-bco.png" alt="GS" onerror="this.parentElement.classList.add('logo-error')" />
+            <span class="fallback-mark">GS</span>
+          </span>
+          <span class="brand-text"><strong>González Solís</strong><span>Propuesta conceptual</span></span>
         </a>
-        <p style="margin-top:16px;">Consultoría de Negocios Integral desde 1974.</p>
+        <p>Landing conceptual con fotografía corporativa, identidad visual más clara, servicios reorganizados y microinteracciones sobrias.</p>
       </div>
-
-      <div>
-        <h4>Enlaces</h4>
-        <a href="/">Inicio</a>
-        <a href="/nosotros/">Nosotros</a>
-        <a href="/contacto/">Contacto</a>
-      </div>
-
-      <div>
-        <h4>Auditoría</h4>
-        <a href="#servicios">Estados financieros</a>
-        <a href="#servicios">Cumplimiento fiscal</a>
-        <a href="#servicios">IMSS y nóminas</a>
-        <a href="#servicios">Servicios especiales</a>
-      </div>
-
-      <div>
-        <h4>Legal</h4>
-        <a href="/aviso-de-privacidad/">Aviso de Privacidad</a>
-        <a href="#">Términos y Condiciones</a>
-        <a href="#">Aviso de Cookies</a>
-      </div>
-
-      <div>
-        <h4>Contáctanos</h4>
-        <p>81 8989 9772 | 81 8989 9773</p>
-        <p>contacto@gs.com.mx</p>
-        <p>Torre Evalor, San Jerónimo, Monterrey, N.L.</p>
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong>Enlaces</strong>
+          <a href="#servicios">Servicios</a>
+          <a href="#metodologia">Nuestra firma</a>
+          <a href="#beneficios">Sectores</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <strong>Servicios</strong>
+          <span>Auditoría</span>
+          <span>Contabilidad</span>
+          <span>Legal</span>
+          <span>Impuestos</span>
+          <span>Consultoría Fiscal</span>
+        </div>
+        <div class="footer-col">
+          <strong>Contacto</strong>
+          <span>81 8989 9772</span>
+          <span>contacto@gs.com.mx</span>
+          <span>Torre Evalor, Monterrey, N.L.</span>
+        </div>
       </div>
     </div>
-
-    <div class="container copyright">© 2026 GS | González Solís. Todos los derechos reservados.</div>
   </footer>
 
 <script src="js/scripts-auditoria.js"></script>  
 </body>
 </html>
+
+
+
