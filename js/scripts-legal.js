@@ -3,6 +3,8 @@ const toggle = document.querySelector('.menu-toggle');
 const links = document.querySelectorAll('.nav-links a');
 const revealEls = document.querySelectorAll('.reveal');
 const bannerImg = document.querySelector('.banner img');
+const legalTabs = document.querySelectorAll('[data-legal-filter]');
+const legalCards = document.querySelectorAll('[data-legal-card]');
 
 const setHeader = () => {
   header.classList.toggle('scrolled', window.scrollY > 12);
@@ -56,3 +58,16 @@ const setParallax = () => {
 
 setParallax();
 window.addEventListener('scroll', setParallax, { passive: true });
+
+legalTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const filter = tab.dataset.legalFilter;
+    legalTabs.forEach(item => item.classList.remove('active'));
+    tab.classList.add('active');
+
+    legalCards.forEach(card => {
+      const visible = filter === 'all' || card.dataset.legalCard === filter;
+      card.classList.toggle('is-hidden', !visible);
+    });
+  });
+});
